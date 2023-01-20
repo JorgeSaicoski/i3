@@ -11,6 +11,8 @@
 ### super + m = System Monitor
 ### super + b = Brave (browser)
 ### super + shift + m = spotify
+### Print = open screenshot software
+### super + Print = screenshot
 
 ## Multiple Monitor
 ```bash
