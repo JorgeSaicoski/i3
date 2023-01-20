@@ -192,16 +192,27 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 # class                 border  bground text    indicator child_border
-client.focused          #FB3640 #0A2463 #E2E2E2 #83CAFA   #51A2DA
-client.focused_inactive #8C8C8C #4C4C4C #FFFFFF #4C4C4C   #8C8C8C
-client.unfocused        #4C4C4C #222222 #888888 #292D2E   #222222
-client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
-client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+client.focused          #093657 #182747 #FFFFFF #EFD466   #51A2DA
+client.focused_inactive #093657 #562B08 #FFFFFF #EFD466   #8C8C8C
+client.unfocused        #093657 #647E68 #FFFFFF #EFD466   #222222
+client.urgent           #093657 #DB3279 #FFFFFF #EFD466   #DB3279
+client.placeholder      #093657 #D8D8D8 #FFFFFF #000000   #0C0C0C
 
 client.background       #605F5E
 
 bar {
-   status_command i3status --config ~/.config/i3/i3status.conf
+    colors {
+        background #2e2e2e
+        statusline #b4d273
+        separator #4b5262
+
+        # colour of border, background, and text
+        focused_workspace   #b4d273 #bf616a #d6d6d6
+        active_workspace    #b05279 #6c99bb #0E0E0F
+        inactive_workspace  #b05279 #797979 #d6d6d6
+        urgent_workspace    #9e86c8 #b05279 #2f343f
+    }
+    status_command i3status --config ~/.config/i3/i3status.conf
 }
 
 
