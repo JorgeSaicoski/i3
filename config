@@ -49,6 +49,11 @@ bindsym $mod+Return exec terminator
 
 bindsym $mod+m exec flatpak run io.github.hakandundar34coding.system-monitoring-center
 
+bindsym $mod+b exec flatpak run com.brave.Browser
+
+bindsym $mod+Shift+m exec flatpak run com.spotify.Client
+
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
