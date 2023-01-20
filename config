@@ -207,12 +207,10 @@ bar {
         separator #4b5262
 
         # colour of border, background, and text
-        focused_workspace   #b4d273 #bf616a #d6d6d6
-        active_workspace    #b05279 #6c99bb #0E0E0F
+        focused_workspace   #b05279 #6c99bb #0E0E0F
+        active_workspace    #b4d273 #bf616a #d6d6d6
         inactive_workspace  #b05279 #797979 #d6d6d6
         urgent_workspace    #9e86c8 #b05279 #2f343f
     }
     status_command i3status --config ~/.config/i3/i3status.conf
 }
-
-
