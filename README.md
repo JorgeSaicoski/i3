@@ -6,7 +6,7 @@
 . ./run.sh
 ```
 
-## Comands
+## Commands
 ### super + p = Dolphin
 ### super + m = System Monitor
 ### super + b = Brave (browser)
