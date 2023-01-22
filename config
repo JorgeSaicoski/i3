@@ -69,6 +69,25 @@ bindsym Control+Shift+Up exec xrandr --output DVI-D-0 --rotate normal
 
 bindsym Control+Shift+Down exec xrandr --output DVI-D-0 --rotate inverted
 
+set $mode_HDMI Launch: HDMI Monitor
+bindsym $mod+Control+Left mode "$mode_HDMI"
+
+mode "$mode_HDMI" {
+  bindsym Control+Shift+s exec xrandr --output HDMI-0 --right-of DVI-D-0 --auto
+
+  bindsym Control+Shift+Left exec xrandr --output HDMI-0 --rotate left
+
+  bindsym Control+Shift+Rigth exec xrandr --output HDMI-0 --rotate right
+
+  bindsym Control+Shift+Up exec xrandr --output HDMI-0 --rotate normal
+
+  bindsym Control+Shift+Down exec xrandr --output HDMI-0 --rotate inverted
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym $mod+r mode "default"
+}
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
